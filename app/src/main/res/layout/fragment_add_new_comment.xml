@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    android:background="@color/colorMainBackground"
+    tools:context="pl.com.wordsweb.ui.fragments.AddNewListFragment">
+
+    <LinearLayout
+        android:id="@+id/add_new_comment_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="@dimen/big_margin"
+        android:layout_marginEnd="@dimen/big_margin"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:background="@drawable/shadow_card">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/add_new_comment_title"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:layout_marginStart="@dimen/medium_margin"
+                    android:gravity="start"
+                    android:textSize="@dimen/list_title"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="@string/new_comment"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="@dimen/tiny_margin">
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorMainBackground"
+                    android:layout_marginStart="@dimen/semi_big_margin"
+                    android:layout_marginEnd="@dimen/semi_big_margin"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginStart="@dimen/medium_margin"
+                android:layout_marginEnd="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/semi_big_margin"
+                android:layout_marginBottom="@dimen/big_margin">
+
+                <EditText
+                    android:id="@+id/add_new_comment_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="..."
+                    android:minLines="7"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    android:layout_marginRight="@dimen/small_margin"
+                    android:background="@drawable/textarea_border"
+                    android:padding="10dp"
+                    android:isScrollContainer="true"/>
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/tiny_margin"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:background="@drawable/shadow_card"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:layout_marginTop="@dimen/medium_margin">
+
+            <TextView
+                android:id="@+id/comments_creation_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_margin"
+                android:layout_marginTop="15dp"
+                android:layout_weight="0.4"
+                android:gravity="left"
+                android:textColor="@color/colorDivider"
+                android:textSize="@dimen/secondary_text">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4">
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/comment_reply_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:layout_weight="0.15"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:src="@drawable/reply_white_24" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="@dimen/medium_margin">
+
+            <TextView
+                android:id="@+id/comments_author"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_margin"
+                android:layout_weight="1"
+                android:text="joannawetesko@gmail.com"
+                android:textSize="@dimen/list_description"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="@dimen/big_margin"
+            android:layout_marginTop="@dimen/medium_margin">
+
+            <TextView
+                android:id="@+id/comments_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/medium_margin"
+                android:layout_marginStart="@dimen/medium_margin"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in purus dictum mauris vestibulum faucibus. Fusce suscipit vehicula ante eget vulputate. Etiam efficitur, lorem vel auctor pulvinar, erat justo ornare dui, ut finibus tellus elit vitae justo. Praesent tempus justo eleifend tempor blandit. Morbi vehicula nec erat in volutpat. Quisque imperdiet eros elit, id dignissim augue iaculis a. Maecenas tempor pharetra tristique. Duis vel tristique sapien, nec vehicula ex. Morbi a tristique dui. Mauris rhoncus molestie dolor a fermentum."
+                android:textColor="@color/colorDivider"
+                android:textSize="@dimen/list_description"/>
+
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
+

@@ -1,0 +1,274 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorMainBackground"
+    tools:context="pl.com.wordsweb.ui.fragments.AddPhraseFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/appbar_pager_padding_bigger"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/appbar_pager_padding_bigger">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/big_margin"
+            android:layout_marginEnd="@dimen/medium_margin"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:background="@drawable/shadow_card">
+
+            <TableLayout
+                android:id="@+id/info_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/medium_margin"
+                    android:layout_marginEnd="@dimen/small_margin"
+                    android:layout_marginStart="@dimen/small_margin"
+                    android:layout_marginTop="@dimen/small_margin">
+
+                    <TextView
+                        android:layout_marginStart="@dimen/small_margin"
+                        android:text="@string/add_new_phrase_info_title"
+                        android:textSize="@dimen/list_title"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="-10dp">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="@dimen/medium_margin"
+                        android:layout_marginStart="@dimen/big_margin"
+                        android:background="@color/colorMainBackground"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/small_margin"
+                    android:layout_marginStart="@dimen/small_margin"
+                    android:layout_marginTop="@dimen/medium_margin">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/small_margin"
+                        android:paddingStart="@dimen/small_margin">
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/small_margin"
+                            android:layout_weight="1">
+
+                            <pl.com.wordsweb.ui.utils.DelayAutoCompleteTextView
+                                android:id="@+id/phrase_language"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/phrase"
+                                android:imeOptions="flagNoExtractUi|actionSearch"
+                                android:inputType="textCapSentences"/>
+
+                            <ProgressBar
+                                android:id="@+id/pb_loading_indicator"
+                                style="?android:attr/progressBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|right"
+                                android:layout_marginRight="@dimen/small_margin"
+                                android:visibility="gone"/>
+                        </FrameLayout>
+
+
+                    </android.support.design.widget.TextInputLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/small_margin"
+                    android:layout_marginStart="@dimen/small_margin"
+                    android:layout_marginTop="-5dp">
+
+                    <Spinner
+                        android:id="@+id/phrase_uses_spinner"
+                        android:layout_width="295dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/small_margin"
+                        android:paddingBottom="@dimen/small_margin"
+                        android:popupBackground="@color/colorCardBackground"
+                        android:spinnerMode="dropdown"
+                        android:visibility="gone"
+                        />
+
+                    <!--TODO: width fix -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="295dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/small_margin"
+                        android:layout_marginStart="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:paddingEnd="@dimen/small_margin"
+                        android:paddingStart="@dimen/small_margin">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/example_language_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="@string/example"
+                            android:inputType="textAutoComplete"
+                            android:scrollHorizontally="true"
+                            android:textSize="@dimen/list_description">
+                            <requestFocus />
+                        </AutoCompleteTextView>
+
+                    </android.support.design.widget.TextInputLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/small_margin"
+                    android:layout_marginEnd="@dimen/small_margin"
+                    android:layout_marginStart="@dimen/big_margin"
+                    android:layout_marginTop="@dimen/small_margin">
+
+                    <ImageButton
+                        android:id="@+id/add_new_phrase_new_example_fields"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="@dimen/tiny_margin"
+                        android:layout_weight="0.05"
+                        android:background="@drawable/shadow_card_yellow"
+                        android:src="@drawable/minus_white_24"
+                        android:visibility="gone"/>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.95" />
+                </TableRow>
+            </TableLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/big_margin"
+            android:layout_marginEnd="@dimen/medium_margin"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:background="@drawable/shadow_card"
+            android:orientation="vertical">
+
+            <TableLayout>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/medium_margin"
+                    android:layout_marginEnd="@dimen/small_margin"
+                    android:layout_marginStart="@dimen/small_margin"
+                    android:layout_marginTop="@dimen/small_margin">
+
+                    <TextView
+                        android:layout_marginStart="@dimen/small_margin"
+                        android:text="@string/add_new_phrase_detail_title"
+                        android:textSize="@dimen/list_title"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="-2dp">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="@dimen/medium_margin"
+                        android:layout_marginStart="@dimen/big_margin"
+                        android:background="@color/colorMainBackground"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/small_margin"
+                    android:layout_marginStart="@dimen/small_margin"
+                    android:layout_marginTop="@dimen/small_margin">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/small_margin"
+                        android:paddingStart="@dimen/small_margin">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/phrase_details_pos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="@string/pair_pos"
+                            android:inputType="textAutoComplete"
+                            android:scrollHorizontally="true"
+                            android:textSize="@dimen/list_description">
+                            <requestFocus />
+                        </AutoCompleteTextView>
+
+                    </android.support.design.widget.TextInputLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/small_margin"
+                    android:layout_marginStart="@dimen/small_margin">
+
+                    <!--TODO: width fix -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/small_margin"
+                        android:paddingStart="@dimen/small_margin">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/phrase_details_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="@string/pair_description"
+                            android:inputType="textAutoComplete"
+                            android:scrollHorizontally="true"
+                            android:textSize="@dimen/list_description">
+                            <requestFocus />
+                        </AutoCompleteTextView>
+
+                    </android.support.design.widget.TextInputLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/medium_margin"
+                    android:layout_marginEnd="@dimen/small_margin"
+                    android:layout_marginStart="@dimen/medium_margin"
+                    android:layout_marginTop="@dimen/small_margin">
+
+                    <CheckBox
+                        android:id="@+id/pair_idiom_checkbox"
+                        android:buttonTint="@color/colorAccent"
+                        android:text="@string/pair_idiom"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/list_description"
+                        />
+                </TableRow>
+
+            </TableLayout>
+        </TableRow>
+        </TableLayout>
+
+
+
+    </ScrollView>

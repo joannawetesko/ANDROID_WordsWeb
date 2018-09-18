@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryLight">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:layout_marginTop="?android:attr/actionBarSize"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pl.com.wordsweb.ui.activities.AddNewPhraseActivity$PlaceholderFragment"
+    android:background="@color/colorPrimaryLight"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:columnCount="1"
+        android:rowCount="9" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:background="@color/colorPrimaryLight"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:id="@+id/list_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:textSize="20sp"
+                android:padding="@dimen/small_margin"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:background="@color/colorPrimaryDark" >
+
+            <ImageView
+                android:id="@+id/firstLanguageImageView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:layout_weight="0.5"
+                />
+
+            <ImageView
+                android:id="@+id/secondLanguageImageView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:layout_weight="0.5"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:id="@+id/pair_details_instruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:textSize="15sp"
+                android:text="@string/pair_detail_instruction"
+                android:padding="@dimen/fab_margin"
+                android:background="@color/colorPrimary"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:background="@color/colorText">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="@dimen/fab_margin">
+
+                <AutoCompleteTextView
+                    android:id="@+id/pos_language_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_margin"
+                    android:hint="@string/pair_pos"
+                    android:inputType="textAutoComplete"
+                    android:layout_weight="0.5"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:scrollHorizontally="true"
+                    android:background="@android:color/transparent"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="@dimen/fab_margin">
+
+                <AutoCompleteTextView
+                    android:id="@+id/pos_language_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_margin"
+                    android:hint="@string/pair_pos"
+                    android:inputType="textAutoComplete"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:scrollHorizontally="true"
+                    android:background="@android:color/transparent"/>
+
+            </android.support.design.widget.TextInputLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:background="@drawable/grey_border">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="@dimen/fab_margin">
+
+                <AutoCompleteTextView
+                    android:id="@+id/description_language_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_margin"
+                    android:hint="@string/pair_description"
+                    android:inputType="textAutoComplete"
+                    android:layout_weight="0.5"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:scrollHorizontally="true"
+                    android:background="@android:color/transparent"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="@dimen/fab_margin">
+
+                <AutoCompleteTextView
+                    android:id="@+id/description_language_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_margin"
+                    android:hint="@string/pair_description"
+                    android:inputType="textAutoComplete"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:scrollHorizontally="true"
+                    android:background="@android:color/transparent"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:background="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <CheckBox
+                android:id="@+id/pair_idiom_checkbox"
+                android:text="@string/pair_idiom"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:layout_weight="1"
+                android:padding="@dimen/fab_margin"
+                android:layout_marginStart="@dimen/nav_header_vertical_spacing"
+                android:layout_marginLeft="@dimen/nav_header_vertical_spacing"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:background="@color/colorPrimary"
+            >
+
+            <TextView
+                android:id="@+id/pair_edit_instruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nav_header_vertical_spacing"
+                android:layout_marginLeft="@dimen/nav_header_vertical_spacing"
+                android:layout_marginEnd="@dimen/nav_header_vertical_spacing"
+                android:layout_marginRight="@dimen/nav_header_vertical_spacing"
+                android:textSize="15sp"
+                android:text="@string/pair_edit_instruction"
+                android:padding="@dimen/fab_margin"
+                android:background="@color/colorPrimary"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryLight"
+            android:gravity="end|bottom">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabFinish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/ic_done_24dp" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryLight"
+            android:gravity="end|bottom">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize" />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

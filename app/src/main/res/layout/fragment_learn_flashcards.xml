@@ -1,0 +1,288 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorMainBackground"
+        android:clipChildren="false"
+        android:orientation="vertical"
+        android:weightSum="2"
+        tools:context="pl.com.wordsweb.ui.fragments.LearnFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/blue_default"
+            android:layout_weight="1"
+            android:background="@drawable/blue_half_background">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorMainBackground"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:id="@+id/learn_card_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/super_large_table_layout"
+                android:layout_marginEnd="@dimen/medium_margin"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginRight="@dimen/medium_margin"
+                android:layout_marginStart="@dimen/medium_margin"
+                android:layout_marginTop="-200dp" >
+
+                <!-- flip card front -->
+                <LinearLayout
+                    android:id="@+id/flip_card_layout_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/shadow_card">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp">
+
+
+                            <TextView
+                                android:id="@+id/learn_current_list_name_front"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:gravity="start"
+                                android:textSize="@dimen/big_card_description" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.25">
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/learn_current_list_level_front"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginEnd="@dimen/tiny_margin"
+                                android:layout_weight="0.25"
+                                android:gravity="end"
+                                android:textColor="@color/colorAccentYellow"
+                                android:textSize="@dimen/big_card_example"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/learn_current_flag_front"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_weight="0.2"/>
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginEnd="@dimen/big_margin"
+                            android:layout_marginLeft="@dimen/big_margin"
+                            android:layout_marginRight="@dimen/big_margin"
+                            android:layout_marginStart="@dimen/big_margin"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/learn_current_phrase_front"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textSize="@dimen/big_card_title_smaller" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginEnd="@dimen/big_margin"
+                            android:layout_marginLeft="@dimen/big_margin"
+                            android:layout_marginRight="@dimen/big_margin"
+                            android:layout_marginStart="@dimen/big_margin"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:id="@+id/learn_current_example_front"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textSize="@dimen/primary_text" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+                <TableRow
+                    android:id="@+id/learn_table_row_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shadow_card">
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fab_learn_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/fab_margin"
+                        android:layout_marginLeft="@dimen/text_margin"
+                        android:layout_marginRight="@dimen/fab_margin"
+                        android:layout_marginTop="@dimen/fab_margin"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:src="@drawable/ic_close_white_48"
+                        android:visibility="gone"
+                        app:backgroundTint="@color/colorAccentYellow"
+                        app:fabSize="normal"/>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6">
+
+                    </RelativeLayout>
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fab_learn_yes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/fab_margin"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:layout_marginRight="@dimen/text_margin"
+                        android:layout_marginTop="@dimen/fab_margin"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:src="@drawable/ic_check_white_48"
+                        android:visibility="gone"
+                        app:backgroundTint="@color/colorAccent"
+                        app:fabSize="normal"/>
+                </TableRow>
+
+                <!-- flip card back -->
+                <LinearLayout
+                    android:id="@+id/flip_card_layout_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="-355dp"
+                    android:alpha="0"
+                    android:background="@drawable/shadow_card">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/learn_current_list_name_back"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:gravity="start"
+                                android:textSize="@dimen/big_card_description" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.25">
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/learn_current_list_level_back"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginEnd="@dimen/tiny_margin"
+                                android:layout_weight="0.25"
+                                android:gravity="end"
+                                android:textColor="@color/colorAccentYellow"
+                                android:textSize="@dimen/big_card_example"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/learn_current_flag_back"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_weight="0.2"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginEnd="@dimen/big_margin"
+                            android:layout_marginLeft="@dimen/big_margin"
+                            android:layout_marginRight="@dimen/big_margin"
+                            android:layout_marginStart="@dimen/big_margin"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/learn_current_phrase_back"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textSize="@dimen/big_card_title" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginEnd="@dimen/big_margin"
+                            android:layout_marginLeft="@dimen/big_margin"
+                            android:layout_marginRight="@dimen/big_margin"
+                            android:layout_marginStart="@dimen/big_margin"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:id="@+id/learn_current_example_back"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textSize="@dimen/primary_text" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+            </TableLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loading_progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+</RelativeLayout>

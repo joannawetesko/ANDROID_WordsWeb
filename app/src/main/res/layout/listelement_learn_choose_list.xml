@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="16dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@drawable/shadow_card"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:layout_marginStart="@dimen/big_margin"
+            android:layout_marginEnd="@dimen/big_margin">
+
+            <TableLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="@dimen/large_card">
+
+                <TableRow
+                    android:layout_marginStart="@dimen/semi_big_margin">
+                <ImageView
+                    android:id="@+id/firstLanguageImageView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-5dp"
+                    android:paddingTop="@dimen/small_margin"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginStart="@dimen/semi_big_margin">
+                <ImageView
+                    android:id="@+id/secondLanguageImageView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    android:paddingBottom="@dimen/small_margin"
+                    />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/lesson_list_element_name"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:gravity="start"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/small_margin"
+                android:paddingLeft="@dimen/small_margin"
+                android:paddingRight="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:maxLines="3"
+                android:textSize="@dimen/list_description"
+                />
+
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:gravity="center">
+                    <CheckBox
+                        android:id="@+id/learn_lists_listelement_checkbox"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:buttonTint="@color/colorAccent"
+                        android:focusable="false"
+                        android:clickable="false"/>
+            </RelativeLayout>
+
+
+        </TableRow>
+
+    </TableLayout>

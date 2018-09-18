@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.com.wordsweb.ui.fragments.LearnListFragment"
+    android:paddingTop="@dimen/appbar_pager_padding_bigger"
+    android:background="@color/colorMainBackground">
+
+    <TextView
+        android:id="@+id/empty_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/empty_list"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/learn_lesson_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0dp"
+        android:divider="@null" />
+        <!--android:layout_below="@+id/empty_list_item"
+        android:layout_toEndOf="@+id/empty_list_item"-->
+
+</RelativeLayout>

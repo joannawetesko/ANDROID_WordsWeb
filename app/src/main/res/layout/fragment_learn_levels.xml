@@ -1,0 +1,343 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:columnCount="3"
+    android:rowCount="3"
+    android:layout_marginEnd="20dp"
+    android:layout_marginRight="20dp"
+    android:paddingTop="@dimen/appbar_pager_padding_bigger"
+    tools:context="pl.com.wordsweb.ui.fragments.LearnLevelsFragment"
+    android:background="@color/colorMainBackground">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/large_card"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:paddingTop="@dimen/small_margin"
+            android:paddingBottom="@dimen/small_margin">
+
+            <TableLayout
+                android:layout_height="@dimen/large_card"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginStart="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:background="@drawable/shadow_card">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/list_description"
+                    android:text="1"
+                    />
+
+                <CheckBox
+                    android:id="@+id/levels_1"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:buttonTint="@color/colorAccent" />
+
+            </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_height="@dimen/large_card"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginStart="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:background="@drawable/shadow_card">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/list_description"
+                    android:text="2"
+                    />
+
+                <CheckBox
+                    android:id="@+id/levels_2"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/colorAccent"
+                    android:buttonTint="@color/colorAccent"/>
+
+                </TableRow>
+                </TableLayout>
+
+
+            <TableLayout
+                android:layout_height="@dimen/large_card"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginStart="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:background="@drawable/shadow_card">
+
+            <TableRow>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/list_description"
+                    android:text="3"
+                    />
+
+                <CheckBox
+                    android:id="@+id/levels_3"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/colorAccent"
+                    android:buttonTint="@color/colorAccent"/>
+
+            </TableRow>
+            </TableLayout>
+
+            </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/large_card"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:paddingTop="@dimen/small_margin"
+        android:paddingBottom="@dimen/small_margin">
+
+        <TableLayout
+            android:layout_height="@dimen/large_card"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:background="@drawable/shadow_card">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/list_description"
+                    android:text="4"
+                    />
+
+                <CheckBox
+                    android:id="@+id/levels_4"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="end"
+                    android:textColor="@color/colorAccent"
+                    android:buttonTint="@color/colorAccent"/>
+
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_height="@dimen/large_card"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:background="@drawable/shadow_card">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/list_description"
+                android:text="5"
+                />
+
+            <CheckBox
+                android:id="@+id/levels_5"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textColor="@color/colorAccent"
+                android:buttonTint="@color/colorAccent"/>
+
+        </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_height="@dimen/large_card"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:background="@drawable/shadow_card">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/list_description"
+                android:text="6"
+                />
+
+            <CheckBox
+                android:id="@+id/levels_6"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textColor="@color/colorAccent"
+                android:buttonTint="@color/colorAccent"/>
+
+        </TableRow>
+        </TableLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/large_card"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:paddingTop="@dimen/small_margin"
+        android:paddingBottom="@dimen/small_margin" >
+
+        <TableLayout
+            android:layout_height="@dimen/large_card"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:background="@drawable/shadow_card">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/list_description"
+                android:text="7"
+                />
+
+            <CheckBox
+                android:id="@+id/levels_7"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textColor="@color/colorAccent"
+                android:buttonTint="@color/colorAccent"/>
+
+        </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_height="@dimen/large_card"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:background="@drawable/shadow_card">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/list_description"
+                android:text="8"
+                />
+
+            <CheckBox
+                android:id="@+id/levels_8"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textColor="@color/colorAccent"
+                android:buttonTint="@color/colorAccent"/>
+
+        </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_height="@dimen/large_card"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:background="@drawable/shadow_card">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/list_description"
+                android:text="9"
+                />
+
+            <CheckBox
+                android:id="@+id/levels_9"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textColor="@color/colorAccent"
+                android:buttonTint="@color/colorAccent"/>
+
+        </TableRow>
+        </TableLayout>
+    </TableRow>
+    </TableLayout>

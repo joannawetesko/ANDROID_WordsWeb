@@ -1,0 +1,126 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.com.wordsweb.ui.fragments.MainPageFragment"
+    android:background="@color/colorMainBackground">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/appbar_padding_main_page">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/main_quizzes_button"
+                android:layout_height="150dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.45"
+                android:background="@drawable/shadow_card_blue_dark"
+                android:layout_marginStart="@dimen/small_margin"
+                android:layout_marginEnd="@dimen/tiny_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:drawableTop="@drawable/question_white_100"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorCardBackground"
+                android:tint="@color/colorCardBackground"
+                android:text="@string/main_quizzes"
+                android:textSize="@dimen/primary_text"/>
+
+            <Button
+                android:id="@+id/main_learn_button"
+                android:layout_height="150dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.45"
+                android:background="@drawable/shadow_card_yellow"
+                android:layout_marginStart="@dimen/tiny_margin"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:drawableTop="@drawable/book_white_100"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorCardBackground"
+                android:tint="@color/colorCardBackground"
+                android:text="@string/main_learn"
+                android:textSize="@dimen/primary_text" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/main_lists_button"
+                android:layout_height="230dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.65"
+                android:background="@drawable/shadow_card_green"
+                android:layout_marginStart="@dimen/small_margin"
+                android:layout_marginEnd="@dimen/tiny_margin"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:drawableTop="@drawable/list_white_150"
+                android:paddingTop="30dp"
+                android:paddingBottom="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorCardBackground"
+                android:tint="@color/colorCardBackground"
+                android:text="@string/main_lists"
+                android:textSize="@dimen/big_card_example_bigger"/>
+
+            <TableLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.35">
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/main_my_lists_button"
+                        android:layout_height="110dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shadow_card_blue"
+                        android:layout_marginStart="@dimen/tiny_margin"
+                        android:layout_marginEnd="@dimen/small_margin"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:drawableTop="@drawable/lock_white_60"
+                        android:paddingTop="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorCardBackground"
+                        android:tint="@color/colorCardBackground"
+                        android:text="@string/main_my_lists"
+                        android:textSize="@dimen/big_card_description"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/main_log_out_button"
+                        android:layout_height="110dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shadow_card_blue_light"
+                        android:layout_marginStart="@dimen/tiny_margin"
+                        android:layout_marginEnd="@dimen/small_margin"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:drawableTop="@drawable/power_white_60"
+                        android:paddingTop="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorCardBackground"
+                        android:tint="@color/colorCardBackground"
+                        android:text="@string/main_log_out"
+                        android:textSize="@dimen/big_card_description"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</FrameLayout>

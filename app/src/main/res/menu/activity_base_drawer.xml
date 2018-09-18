@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main_page"
+            android:icon="@drawable/ic_home_black_24px"
+            android:title="@string/hamburger_menu_main_page" />
+
+        <item
+            android:id="@+id/nav_manage_page"
+            android:icon="@drawable/list_white_150"
+            android:title="@string/hamburger_menu_add_page" />
+
+        <item
+            android:id="@+id/nav_learn_page"
+            android:icon="@drawable/book_white_100"
+            android:title="@string/hamburger_menu_learn_page" />
+
+
+    </group>
+
+    <group
+        android:id="@+id/menu_middle"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_my_manage_page"
+            android:icon="@drawable/lock_white_60"
+            android:title="@string/hamburger_menu_my_lists" />
+
+        <item
+            android:id="@+id/nav_my_quizz"
+            android:icon="@drawable/question_white_100"
+            android:title="@string/hamburger_menu_my_quizzes" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_power_settings_new_black_48px"
+            android:title="@string/hamburger_menu_logout"/>
+
+    </group>
+
+
+
+</menu>

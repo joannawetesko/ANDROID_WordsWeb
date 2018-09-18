@@ -1,0 +1,210 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:columnCount="3"
+    android:rowCount="0"
+    android:layout_marginEnd="20dp"
+    android:layout_marginRight="20dp"
+    android:paddingTop="@dimen/appbar_pager_padding">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@drawable/shadow_card"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:paddingTop="@dimen/small_margin"
+        android:paddingBottom="@dimen/small_margin">
+
+        <RelativeLayout
+            android:layout_height="@dimen/small_card"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/direction_both_up_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/small_margin"
+                android:paddingLeft="@dimen/small_margin"
+                android:paddingRight="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:layout_marginTop="-12dp"
+                android:src="@drawable/ic_arrow_upward_black_24dp"
+                android:tint="@color/colorSecondaryText"/>
+
+            <ImageView
+                android:id="@+id/direction_both_down_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:paddingTop="@dimen/small_margin"
+                android:paddingLeft="@dimen/small_margin"
+                android:paddingRight="@dimen/small_margin"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_arrow_downward_black_24dp"
+                android:tint="@color/colorSecondaryText"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/direction_both_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:gravity="start"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/small_margin"
+            android:paddingLeft="@dimen/small_margin"
+            android:paddingRight="@dimen/small_margin"
+            android:paddingBottom="@dimen/small_margin"
+            android:maxLines="3"
+            android:textSize="@dimen/list_title"
+            android:text="@string/direction_both"
+            />
+
+        <RelativeLayout
+            android:layout_height="@dimen/small_card"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center">
+            <CheckBox
+                android:id="@+id/direction_both_checkbox"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:buttonTint="@color/colorAccent"/>
+        </RelativeLayout>
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@drawable/shadow_card"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:paddingTop="@dimen/small_margin"
+        android:paddingBottom="@dimen/small_margin">
+
+        <RelativeLayout
+            android:layout_height="@dimen/small_card"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/direction_up_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/small_margin"
+                android:paddingLeft="@dimen/small_margin"
+                android:paddingRight="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:src="@drawable/ic_arrow_upward_black_24dp"
+                android:tint="@color/colorSecondaryText"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/direction_up_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:gravity="start"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/small_margin"
+            android:paddingLeft="@dimen/small_margin"
+            android:paddingRight="@dimen/small_margin"
+            android:paddingBottom="@dimen/small_margin"
+            android:maxLines="3"
+            android:textSize="@dimen/list_title"
+            android:text="@string/direction_up"
+            />
+
+        <RelativeLayout
+            android:layout_height="@dimen/small_card"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center">
+            <CheckBox
+                android:id="@+id/direction_up_checkbox"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:buttonTint="@color/colorAccent"/>
+        </RelativeLayout>
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@drawable/shadow_card"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:paddingTop="@dimen/small_margin"
+        android:paddingBottom="@dimen/small_margin">
+
+        <RelativeLayout
+            android:layout_height="@dimen/small_card"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/direction_down_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/small_margin"
+                android:paddingLeft="@dimen/small_margin"
+                android:paddingRight="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:src="@drawable/ic_arrow_downward_black_24dp"
+                android:tint="@color/colorSecondaryText"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/direction_down_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:gravity="start"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/small_margin"
+            android:paddingLeft="@dimen/small_margin"
+            android:paddingRight="@dimen/small_margin"
+            android:paddingBottom="@dimen/small_margin"
+            android:maxLines="3"
+            android:textSize="@dimen/list_title"
+            android:text="@string/direction_down"
+            />
+
+        <RelativeLayout
+            android:layout_height="@dimen/small_card"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center">
+            <CheckBox
+                android:id="@+id/direction_down_checkbox"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:buttonTint="@color/colorAccent"/>
+        </RelativeLayout>
+
+
+    </TableRow>
+
+</TableLayout>

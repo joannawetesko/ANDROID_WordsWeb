@@ -1,0 +1,143 @@
+<resources>
+    <string name="app_name">Phrase Web</string>
+    <string name="title_activity_login">Welcome</string>
+
+    <!--Title of all tabs-->
+    <string name="tab_section_register">REGISTER</string>
+    <string name="tab_section_login">LOGIN</string>
+    <string name="tab_section_learn" translatable="false">LISTS</string>
+    <string name="tab_section_level" translatable="false">LEVELS</string>
+    <string name="tab_section_direction" translatable="false">DIRECTIONS</string>
+    <string name="tab_section_mode" translatable="false">MODE</string>
+
+    <!--Titles in action bar-->
+    <string name="title_module_add_new_list">New list</string>
+    <string name="title_module_learn">Learn</string>
+    <string name="title_module_main">Phrase Web</string>
+    <string name="title_module_list">Lists</string>
+    <string name="title_module_my_list">My lists</string>
+    <string name="title_module_quizzes">My quizzes</string>
+
+
+    <string name="title_activity_lesson_list">Your lists</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_delete">Delete</string>
+
+
+    <string name="empty_list">There are no available lists</string>
+    <string name="empty_current_list">This list is empty :(</string>
+    <string name="empty_comment">There are no available comments</string>
+    <string name="empty_quizz">There are no available quizzes</string>
+
+    <!-- Strings related to login and register-->
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password </string>
+    <string name="prompt_repeat_password">Repeat password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_skip">"Skip"</string>
+    <string name="action_join">Join</string>
+    <string name="action_join_short">Join</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_passwords_dont_match">These passwords don\'t match</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">Contacts permissions are needed for providing email
+        completions.
+    </string>
+
+    <!-- Strings related to adding new lesson list-->
+    <string name="title_popup_add_new_lesson">Add new lesson list</string>
+    <string name="prompt_lesson_name">Name</string>
+    <string name="prompt_lesson_language_1">First language</string>
+    <string name="prompt_lesson_language_2">Second language</string>
+    <string name="add_new_lesson_button">Add new list</string>
+    <string name="add_list_instruction">Please provide the name of your list and pick two languages. Be aware that your new list will be seen in public.</string>
+
+    <string name="title_activity_current_list">Your lists</string>
+
+    <!--Hamburger menu-->
+    <string name="hamburger_menu_refresh">Refresh</string>
+    <string name="hamburger_menu_application_name">Phrase Web</string>
+    <string name="hamburger_menu_logout">Logout</string>
+    <string name="hamburger_menu_my_quizzes">My quizzes</string>
+    <string name="hamburger_menu_my_stats">My stats</string>
+    <string name="hamburger_menu_my_lists">My lists</string>
+    <string name="hamburger_menu_main_page">Main page</string>
+
+    <string name="hamburger_menu_separator_account">Account</string>
+
+    <!--Spinnery-->
+    <string-array name="languages_name">
+        <item>polski</item>
+        <item>deutsch</item>
+        <item>english</item>
+
+    </string-array>
+
+    <!--Add new phrase activity-->
+    <string name="phrase">Phrase</string>
+    <string name="phrase_instruction">First please provide a new phrase or choose an already existing one</string>
+    <string name="example">Example of use</string>
+    <string name="example_instruction">What exactly did you mean?</string>
+    <string name="example_2_instruction">If the example you are looking for, does not exist, feel free to add a new one</string>
+    <string name="swipe_instruction">Finished? Swipe right to continue!</string>
+    <string name="pair_detail_instruction">Here you can provide necessary details</string>
+    <string name="pair_idiom">Idiom</string>
+    <string name="pair_pos">Part of speech</string>
+    <string name="pair_description">Description</string>
+    <string name="pair_edit_instruction">If you have selected an already existing use of a phrase, you will not be able to edit above details</string>
+    <string name="examples_instructions">Examples of use of these phrases</string>
+
+    <string name="title_activity_add_new_phrase">Add a new phrase to your list</string>
+    <string name="title_add_new_list">Add a new list</string>
+
+
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="register_dialog_message">Check your inbox and click confirmation link.</string>
+    <string name="register_dialog_title">Confirmation link</string>
+    <string name="ok">ok</string>
+    <string name="user_exist">This user exist.</string>
+
+    <!-- Learn -->
+    <string name="hamburger_menu_learn_page">Learn</string>
+    <string name="direction_both">Both</string>
+    <string name="direction_up">Up</string>
+    <string name="direction_down">Down</string>
+    <string name="congrats">CONGRATULATIONS!</string>
+    <string name="right_answers">right answers</string>
+    <string name="wrong_answers">wrong answers</string>
+    <string name="back">Back</string>
+    <string name="stats">Stats</string>
+    <string name="again">Continue</string>
+    <string name="hamburger_menu_add_page">Lists</string>
+    <string name="mode_flashcards">Flashcards</string>
+    <string name="mode_write">Write</string>
+    <string name="check_confirm">Check</string>
+
+    <!-- Mainpage -->
+    <string name="main_learn">Learn</string>
+    <string name="main_lists">Lists</string>
+    <string name="main_my_lists">My lists</string>
+    <string name="main_quizzes">Quizzes</string>
+    <string name="main_log_out">Log out</string>
+    <string name="quiz_correct_answer_label">Correct: </string>
+    <string name="quiz_irrcorrect_answer_label">Incorrect: </string>
+
+    <!-- Comments -->
+    <string name="new_comment">New comment</string>
+
+    <!-- Add new phrase -->
+    <string name="add_new_phrase_info_title">Info</string>
+    <string name="add_new_phrase_detail_title">Details</string>
+    <string name="add_new_phrase_use_title">Use</string>
+    <string name="not_allowed">That\'s not your list, you can\'t modify them.</string>
+    <string name="error_different_password">Password must be the same</string>
+
+</resources>
